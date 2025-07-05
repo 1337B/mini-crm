@@ -37,7 +37,6 @@ public class DashboardController {
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
-            // Mostramos un cartel si hay error
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Could not load client management screen");

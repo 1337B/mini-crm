@@ -55,7 +55,7 @@ public class LoginController {
             UserLoginDTO loginDTO = new UserLoginDTO(username, password);
             UserDTO user = userService.login(loginDTO);
 
-            System.out.println("✅ Login successful. Loading Dashboard...");
+            System.out.println("Login successful. Loading Dashboard...");
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/DashboardView.fxml"));
             Parent root = loader.load();
@@ -68,10 +68,10 @@ public class LoginController {
             stage.setTitle("Dashboard");
             stage.show();
 
-            System.out.println("✅ Dashboard scene loaded.");
+            System.out.println("Dashboard scene loaded.");
 
         } catch (Exception e) {
-            e.printStackTrace(); // 👈 importante para ver el error real
+            e.printStackTrace(); 
             errorLabel.setText(e.getMessage());
         }
     }

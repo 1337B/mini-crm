@@ -7,7 +7,7 @@ Una aplicación de escritorio sencilla de gestión de clientes, proyectos y tare
 ### macOS
 ## 📦 Descargas
 
-- [💻 Descargar para macOS (.dmg)](https://github.com/1337B/mini-crm/releases/download/v1.0.0/CRMApp-1.0.dmg)
+- [ Descargar para macOS (.dmg)](https://github.com/1337B/mini-crm/releases/download/v1.0.0/CRMApp-1.0.dmg)
 
 O
 1. Ir a la sección [Releases](https://github.com/TU_USUARIO/TU_REPO/releases).
@@ -15,9 +15,9 @@ O
 3. Abrir el `.dmg` y arrastrar `CRMApp` a la carpeta **Aplicaciones**.
 4. Hacer doble clic sobre la app para comenzar.
 
-✅ No es necesario instalar Java ni JavaFX. Todo viene embebido.
+ No es necesario instalar Java ni JavaFX. Todo viene embebido.
 
-> 🧠 Si al abrir la app aparece un mensaje de seguridad de Apple, hacé clic derecho → **Abrir** la primera vez.
+>  Si al abrir la app aparece un mensaje de seguridad de Apple, hacé clic derecho → **Abrir** la primera vez.
 
 ---
 
@@ -47,10 +47,10 @@ mvn clean package
 java --module-path /ruta/a/javafx-sdk-XX/lib \
 --add-modules javafx.controls,javafx.fxml \
 -jar target/crm-1.0-SNAPSHOT-jar-with-dependencies.jar
-📦 Crear instalador (solo si querés empaquetar)
-bash
-Copiar
-Editar
+```
+
+## 📦 Crear instalador (solo si querés empaquetar)
+```
 jlink \
 --module-path "/ruta/a/javafx-jmods:$JAVA_HOME/jmods" \
 --add-modules java.base,java.logging,java.sql,java.xml,javafx.controls,javafx.fxml \
@@ -79,7 +79,6 @@ JavaFX con FXML (separación de UI y lógica)
 Testing con JUnit 5
 
 📁 Estructura del proyecto
-css
 ```
 ├── src/main/java/com/cbielaszczuk/crm
 │   ├── config/
@@ -94,5 +93,5 @@ css
 ├── src/main/resources/views/
 ├── target/
 ├── database/
-└── dist/ (no se sube al repo, se publica en Releases)
+└── dist/ 
 ```

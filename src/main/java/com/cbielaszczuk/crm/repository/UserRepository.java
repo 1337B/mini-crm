@@ -24,7 +24,7 @@ public class UserRepository {
             stmt.setString(5, user.getPhone());
             stmt.executeUpdate();
         } catch (SQLException e) {
-            System.err.println("❌ Error saving user: " + e.getMessage());
+            System.err.println("Error saving user: " + e.getMessage());
         }
     }
 
@@ -37,7 +37,7 @@ public class UserRepository {
                 return mapRowToUser(rs);
             }
         } catch (SQLException e) {
-            System.err.println("❌ Error getting user by ID: " + e.getMessage());
+            System.err.println("Error getting user by ID: " + e.getMessage());
         }
         return null;
     }
@@ -51,7 +51,7 @@ public class UserRepository {
                 users.add(mapRowToUser(rs));
             }
         } catch (SQLException e) {
-            System.err.println("❌ Error getting all users: " + e.getMessage());
+            System.err.println(" Error getting all users: " + e.getMessage());
         }
         return users;
     }
@@ -67,7 +67,7 @@ public class UserRepository {
             stmt.setInt(6, user.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
-            System.err.println("❌ Error updating user: " + e.getMessage());
+            System.err.println("Error updating user: " + e.getMessage());
         }
     }
 
@@ -77,7 +77,7 @@ public class UserRepository {
             stmt.setInt(1, id);
             stmt.executeUpdate();
         } catch (SQLException e) {
-            System.err.println("❌ Error deleting user: " + e.getMessage());
+            System.err.println("Error deleting user: " + e.getMessage());
         }
     }
 
@@ -90,7 +90,7 @@ public class UserRepository {
                 return mapRowToUser(rs);
             }
         } catch (SQLException e) {
-            System.err.println("❌ Error finding user by username: " + e.getMessage());
+            System.err.println("Error finding user by username: " + e.getMessage());
         }
         return null;
     }

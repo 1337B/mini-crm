@@ -11,7 +11,7 @@ public class Main {
 
         if (conn != null) {
             System.out.println("Connected to H2 database.");
-            DatabaseInitializer.initialize(); // Llama al método que crea las tablas
+            DatabaseInitializer.initialize(); 
         } else {
             System.err.println("Failed to connect to database.");
         }

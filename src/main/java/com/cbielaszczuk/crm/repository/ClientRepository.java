@@ -26,7 +26,7 @@ public class ClientRepository {
             stmt.setString(5, client.getNotes());
             stmt.executeUpdate();
         } catch (SQLException e) {
-            System.err.println("❌ Error saving client: " + e.getMessage());
+            System.err.println(" Error saving client: " + e.getMessage());
         }
     }
 
@@ -43,7 +43,7 @@ public class ClientRepository {
             }
 
         } catch (SQLException e) {
-            System.err.println("❌ Error retrieving clients: " + e.getMessage());
+            System.err.println(" Error retrieving clients: " + e.getMessage());
         }
 
         return clients;
@@ -62,7 +62,7 @@ public class ClientRepository {
             }
 
         } catch (SQLException e) {
-            System.err.println("❌ Error finding client: " + e.getMessage());
+            System.err.println(" Error finding client: " + e.getMessage());
         }
 
         return null;
@@ -80,7 +80,7 @@ public class ClientRepository {
             stmt.setInt(6, client.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
-            System.err.println("❌ Error updating client: " + e.getMessage());
+            System.err.println(" Error updating client: " + e.getMessage());
         }
     }
 

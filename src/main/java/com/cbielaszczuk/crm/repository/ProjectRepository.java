@@ -29,7 +29,7 @@ public class ProjectRepository {
             stmt.setObject(6, project.getDueDate());
             stmt.executeUpdate();
         } catch (SQLException e) {
-            System.err.println("❌ Error saving project: " + e.getMessage());
+            System.err.println(" Error saving project: " + e.getMessage());
         }
     }
 
@@ -45,7 +45,7 @@ public class ProjectRepository {
             }
 
         } catch (SQLException e) {
-            System.err.println("❌ Error retrieving projects: " + e.getMessage());
+            System.err.println("Error retrieving projects: " + e.getMessage());
         }
 
         return projects;
@@ -64,7 +64,7 @@ public class ProjectRepository {
             }
 
         } catch (SQLException e) {
-            System.err.println("❌ Error finding project: " + e.getMessage());
+            System.err.println(" Error finding project: " + e.getMessage());
         }
 
         return null;

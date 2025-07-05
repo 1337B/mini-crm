@@ -18,9 +18,9 @@ public class ClientFormController {
     @FXML private TextArea notesField;
 
     private ClientService clientService;
-    private ClientDTO editingClient; // null si es creación
+    private ClientDTO editingClient;
 
-    private Runnable onSaveCallback; // para refrescar la tabla luego
+    private Runnable onSaveCallback; 
 
     public ClientFormController() {
         clientService = new ClientService(new ClientRepository(DatabaseConnection.getInstance()));
