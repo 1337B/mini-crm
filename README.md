@@ -21,7 +21,7 @@ O
 
 ---
 
-### 🪟 Windows (próximamente)g
+### 🪟 Windows (próximamente)
 
 Se publicará un instalador `.exe` cuando se compile desde una PC con Windows.
 
