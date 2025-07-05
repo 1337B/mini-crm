@@ -37,7 +37,7 @@ Se publicará un instalador `.exe` cuando se compile desde una PC con Windows.
 ## 💻 Compilar desde código
 
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPO.git
+git clone https://github.com/1337B/mini-crm.git
 cd crm
 mvn clean package
 ```
