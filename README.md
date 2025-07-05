@@ -5,7 +5,11 @@ Una aplicación de escritorio sencilla de gestión de clientes, proyectos y tare
 ## 🚀 Instalación rápida
 
 ### macOS
+## 📦 Descargas
 
+- [💻 Descargar para macOS (.dmg)](https://github.com/1337B/mini-crm/releases/download/v1.0.0/CRMApp-1.0.dmg)
+
+O
 1. Ir a la sección [Releases](https://github.com/TU_USUARIO/TU_REPO/releases).
 2. Descargar el archivo `CRMApp.dmg`.
 3. Abrir el `.dmg` y arrastrar `CRMApp` a la carpeta **Aplicaciones**.
