@@ -8,6 +8,7 @@ Una aplicación de escritorio sencilla de gestión de clientes, proyectos y tare
 ## 📦 Descargas
 
 - [ Descargar para macOS (.dmg)](https://github.com/1337B/mini-crm/releases/download/v1.0.0/CRMApp-1.0.dmg)
+- [ Descargar para Windows (.exe)](https://github.com/1337B/mini-crm/releases/download/v1.0.0/CRMApp-1.0.exe)
 
 O
 1. Ir a la sección [Releases](https://github.com/TU_USUARIO/TU_REPO/releases).
